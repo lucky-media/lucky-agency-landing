@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,700&display=swap');
 
 @tailwind base;
 
@@ -7,11 +7,8 @@
 
 @tailwind utilities;
 
-@import "./components/article";
-@import "./components/button";
-@import "./components/navigation";
-
+@import "components/navigation";
 
 body {
-  @apply antialiased;
+  @apply antialiased font-sans;
 }

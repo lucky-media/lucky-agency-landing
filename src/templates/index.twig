@@ -2,21 +2,33 @@
 
 {% block content %}
 
-<div class="bg-gray-800">
-    <div class="container mx-auto py-4">
-        <div class="w-full">
-            <h1 class="font-bold text-white text-2xl">{{ page.title }}</h1>
+{# Navigation #}
+{% include "_sections/navigation.twig" %}
+
+
+
+<div class="container mt-16">
+    <div class="row justify-center text-center">
+        <div class="col-12 lg:col-8">
+            <p class="text-xs font-bold text-orange-500 uppercase mb-2">{{ heading.subtitle }}</p>
+            <h1 class="text-3xl lg:text-5xl font-bold text-blue-500 mb-4">{{ heading.title }}</h1>
+            <p class="text-sm md:text-lg text-gray-600 leading-loose font-light">{{ heading.desc }}</p>
+        </div>
+    </div>
+    <div class="row justify-center mt-10">
+        <div class="col-12 md:col-5">
+            <input type="text" placeholder="{{ newsletter.title }}"
+                class="placeholder-gray-800 bg-gray-400 w-full px-5 py-4 rounded shadow-input appearance-none outline-none">
+        </div>
+        <div class="col-12 md:col-4 mt-4 md:mt-0">
+            <button class="bg-orange-300 text-orange-400 font-medium py-4 rounded w-full">
+                {{ newsletter.button }}
+            </button>
         </div>
     </div>
 </div>
-
-<div class="container pt-24">
-    <div class="row">
-        {% include "_components/grid.twig" %}
-    </div>
-    <div class="row">
-        <img src="assets/images/34779.png" alt="">
-    </div>
+<div class="-mt-32 h-64" style="background: url('assets/images/gray_lines.png') no-repeat center center / cover;">
 </div>
+
 
 {% endblock %}

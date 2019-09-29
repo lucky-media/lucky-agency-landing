@@ -1,0 +1,25 @@
+<nav class="navigation bg-white p-5 shadow-md lg:shadow-none sticky top-0 z-10">
+    <div class="container h-full flex items-center justify-between flex-wrap">
+        <div class="flex items-center mr-6">
+            <h1 class="text-blue-500 font-bold text-xl">{{ page.title }}</h1>
+        </div>
+        <div class="flex items-center lg:hidden">
+            <button class="appearance-none outline-none" id="navigationToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="block fill-current text-gray-700 w-6 h-6"
+                    viewBox="0 0 20 20">
+                    <path d="M0 0h20v2.857H0V0zM0 8.571h20v2.858H0V8.57zM0 17.143h20V20H0v-2.857z" />
+                </svg>
+            </button>
+        </div>
+        <div class="navigation__items w-full h-full lg:items-center lg:w-auto">
+            <div class="text-lg lg:flex-grow lg:mr-8">
+                {% for item in navigation.items %}
+                <a href="{{ item.url }}"
+                    class="block py-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 mr-4">
+                    {{ item.title }}
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</nav>

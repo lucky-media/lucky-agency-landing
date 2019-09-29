@@ -1,5 +1,14 @@
 {
     "page": {
-        "title": "Lucky Starter"
+        "title": "Agency LP"
+    },
+    "heading": {
+        "title": "An awesome heading",
+        "subtitle": "Check this out",
+        "desc": "Let us introduce you to our great product that will solve your problems and make your life easier! Start your free trial today and see for yourself how easy it is."
+    },
+    "newsletter": {
+        "title": "Enter your email here",
+        "button": "Get our product now!"
     }
 }
