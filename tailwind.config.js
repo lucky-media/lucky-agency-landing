@@ -4,6 +4,7 @@ module.exports = {
       'sans': 'heebo, -apple-system, BlinkMacSystemFont',
     },
     colors: {
+      white: '#fff',
       gray: {
         300: '#E2E8F0',
         400: '#F2F0F6',

@@ -9,6 +9,7 @@
     },
     "newsletter": {
         "title": "Enter your email here",
-        "button": "Get our product now!"
+        "button": "Get our product now!",
+        "image": "assets/images/browser.png"
     }
 }
