@@ -16,6 +16,9 @@ module.exports = {
       blue: {
         500: '#1F0E93',
       },
+      green: {
+        500: '#0E936E',
+      },
       red: {
         500: '#D23244',
       },
@@ -31,7 +34,8 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        input: 'inset 0px 0px 1px rgba(46, 32, 139, 0.23913)'
+        input: 'inset 0px 0px 1px rgba(46, 32, 139, 0.23913)',
+        heading: '0px -4px 64px rgba(214, 210, 220, 0.485536)'
       }
     }
   },

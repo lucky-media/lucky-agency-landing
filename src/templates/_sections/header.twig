@@ -1,0 +1,22 @@
+<div class="container mt-16">
+    <div class="row justify-center text-center">
+        {% include "../_components/heading.twig" with {params: heading} %}
+    </div>
+    <div class="row justify-center mt-10">
+        <div class="col-12 md:col-5">
+            <input type="text" placeholder="{{ newsletter.title }}"
+                class="placeholder-gray-800 text-gray-800 bg-gray-400 w-full px-5 py-4 rounded shadow-input appearance-none outline-none">
+        </div>
+        <div class="col-12 mb-10 md:col-4 mt-4 md:mt-0">
+            <button
+                class="bg-orange-300 hover:bg-orange-500 hover:text-white text-orange-400 font-medium py-4 rounded w-full">
+                {{ newsletter.button }}
+            </button>
+        </div>
+        <div class="col-12 mt-10 md:mt-24">
+            <img src="{{ newsletter.image }}" class="object-center object-cover w-full h-auto shadow-heading" alt="">
+        </div>
+    </div>
+</div>
+<div class="-mt-24 h-64" style="background: url('assets/images/gray_lines.png') no-repeat center center / cover;">
+</div>

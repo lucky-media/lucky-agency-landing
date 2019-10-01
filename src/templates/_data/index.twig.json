@@ -4,6 +4,7 @@
     },
     "heading": {
         "title": "An awesome heading",
+        "color": "purple",
         "subtitle": "Check this out",
         "desc": "Let us introduce you to our great product that will solve your problems and make your life easier! Start your free trial today and see for yourself how easy it is."
     },
@@ -11,5 +12,25 @@
         "title": "Enter your email here",
         "button": "Get our product now!",
         "image": "assets/images/browser.png"
+    },
+    "features": {
+        "title": "Your brilliant features",
+        "subtitle": "Check this out",
+        "desc": "Here are the main features and benefits of our product, designed to give you the best possible experience.",
+        "color": "green",
+        "slides": [
+            {
+                "image": "assets/images/phone.png"
+            },
+            {
+                "image": "assets/images/office.png"
+            },
+            {
+                "image": "assets/images/laptop.png"
+            },
+            {
+                "image": "assets/images/camera.png"
+            }
+        ]
     }
 }
