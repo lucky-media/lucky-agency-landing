@@ -1,0 +1,11 @@
+<div class="flex flex-col justify-start items-start">
+    <div class="flex flex-col">
+        <img class="object-fit w-16 h-auto" src="assets/services/{{params.color}}.png" alt="">
+        <h1 class="font-bold text-{{ params.color }}-500 text-3xl mt-10">{{ params.title }}</h1>
+    </div>
+    <p class="text-gray-600 leading-relaxed mt-5">
+        {{ params.desc }}
+    </p>
+    <a class="text-{{ params.color }}-500 text-sm font-medium underline mt-5"
+        href="{{ params.link.href }}">{{ params.link.name }}</a>
+</div>

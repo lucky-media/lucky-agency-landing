@@ -32,5 +32,43 @@
                 "image": "assets/images/camera.png"
             }
         ]
+    },
+    "services": {
+        "orange": {
+            "color": "orange",
+            "title": "Orange feature",
+            "desc": "Organize your work better with the orange feature. It will help you manage your tasks and schedule your meetings.",
+            "link": {
+                "name": "Check this out!",
+                "href": "#"
+            }
+        },
+        "purple": {
+            "color": "purple",
+            "title": "Violet feature",
+            "desc": "Make your everyday life easier with the violet feature.<br><br>Do your job better and get more free time to spend with your family!",
+            "link": {
+                "name": "Check this out!",
+                "href": "#"
+            }
+        },
+        "blue": {
+            "color": "blue",
+            "title": "Blue feature",
+            "desc": "The blue feature will help you manage your team, making them happier, less tired and more productive. No more complaints!",
+            "link": {
+                "name": "Check this out!",
+                "href": "#"
+            }
+        },
+        "red": {
+            "color": "red",
+            "title": "Red feature",
+            "desc": "Save time and money thanks to the red feature! Instead of using many expensive tools, find everything you need in one place.",
+            "link": {
+                "name": "Check this out!",
+                "href": "#"
+            }
+        }
     }
 }

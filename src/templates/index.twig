@@ -8,14 +8,35 @@
 {# Heading #}
 {% include "_sections/header.twig" %}
 
+{# Slides #}
 <div class="container">
     <div class="row justify-center text-center">
         {% include "_components/heading.twig" with {params: features} %}
     </div>
-    <div class="row mt-10">
-        {% for item in features.slides %}
-        <img src="{{ item.image  }}" alt="">
-        {% endfor %}
+</div>
+<div class="w-full  mt-10 flex flex-row">
+    {% for item in features.slides %}
+    <img src="{{ item.image  }}" alt="">
+    {% endfor %}
+</div>
+
+{# Features #}
+<div class="container mt-32">
+    <div class="row justify-center">
+        <div class="col-3 pt-40">
+            {% include "_components/feature.twig" with {params: services.purple }  %}
+        </div>
+        <div class="col-3 offset-1">
+            {% include "_components/feature.twig" with {params: services.orange }  %}
+        </div>
+    </div>
+    <div class="row justify-center">
+        <div class="col-3 pt-40">
+            {% include "_components/feature.twig" with {params: services.red }  %}
+        </div>
+        <div class="col-3 offset-1">
+            {% include "_components/feature.twig" with {params: services.blue }  %}
+        </div>
     </div>
 </div>
 
