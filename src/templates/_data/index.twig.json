@@ -70,5 +70,12 @@
                 "href": "#"
             }
         }
+    },
+    "testimonial": {
+        "quote": "When I first heard about the Product, I wasn’t convinced. But my friends and coworkers all kept talking about it. I’ve finally decided to join and couldn’t be happier! It’s extremely user-friendly and helps me manage my work better. Highly recommended!",
+        "author": {
+            "name": "Cristian Newman",
+            "position": "Ceo of Company"
+        }
     }
 }
