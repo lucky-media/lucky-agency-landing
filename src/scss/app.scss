@@ -12,3 +12,7 @@
 body {
   @apply antialiased font-sans;
 }
+
+.tst_image {
+  clip-path: polygon(0 13%, 100% 0, 100% 100%, 6% 94%);
+}

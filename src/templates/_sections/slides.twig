@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row justify-center text-center">
+        {% include "../_components/heading.twig" with {params: features} %}
+    </div>
+</div>
+<div class="w-full  mt-10 flex flex-row">
+    {% for item in features.slides %}
+    <img src="{{ item.image  }}" alt="">
+    {% endfor %}
+</div>

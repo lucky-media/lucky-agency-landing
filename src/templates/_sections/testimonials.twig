@@ -1,0 +1,38 @@
+<div class="container pt-56">
+    <div class="row">
+        <div class="md:w-1/2">
+            <div class="flex flex-row items-start justify-start ">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="inline-block flex-shrink-0 fill-current text-gray-300 w-16 h-16" viewBox="0 0 20 20">
+                    <path
+                        d="M2 4h6.935v5.337c0 1.965-.41 3.518-1.228 4.66C6.89 15.139 5.491 16.14 3.514 17L2 14.164c1.233-.573 2.08-1.144 2.543-1.712.462-.569.72-1.24.773-2.016H2V4zm8.082 0h6.935v5.337c0 1.965-.41 3.518-1.227 4.66-.819 1.142-2.216 2.143-4.193 3.003l-1.515-2.836c1.233-.573 2.08-1.144 2.543-1.712.462-.569.72-1.24.773-2.016h-3.316V4z"
+                        clip-rule="evenodd" />
+                </svg>
+                <p class="font-light text-gray-600 leading-loose ml-8">
+                    {{ testimonial.quote }}
+                </p>
+            </div>
+            <div class="flex flex-row mt-16">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="inline-block flex-shrink-0 fill-current text-gray-300 w-16 h-16 mr-8" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M13.142 6.423c0 1.891-1.262 3.424-2.818 3.424-1.557 0-2.819-1.533-2.819-3.424 0-1.89.414-3.423 2.819-3.423 2.404 0 2.818 1.533 2.818 3.423zm-1.275 3.687c3.292.594 3.722 1.532 3.774 4.826.003.21.005.247.006.228v.256S14.863 17 10.324 17C5.784 17 5 15.42 5 15.42v-.346c0 .03.003.017.008-.245.06-3.207.516-4.132 3.772-4.72 0 0 .464.591 1.544.591s1.543-.59 1.543-.59z"
+                        clip-rule="evenodd" />
+                </svg>
+                <div class="flex flex-col">
+                    <h3 class="font-light text-3xl text-gray-700">{{ testimonial.author.name }}</h3>
+                    <p class="text-xs text-orange-500 uppercase font-bold tracking-widest mt-2">
+                        {{ testimonial.author.position }}</p>
+                    <div class="flex flex-row items-center mt-4">
+                        {% include "../_components/social_icons.twig" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-first mb-16 lg:mb-0 lg:order-none lg:absolute lg:right-0 lg:-mt-16">
+            <div class="lg:max-w-md xl:max-w-xl">
+                <img class="tst_image" src="{{ testimonial.image }}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
