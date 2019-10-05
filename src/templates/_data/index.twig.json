@@ -78,5 +78,22 @@
             "name": "Cristian Newman",
             "position": "Ceo of Company"
         }
+    },
+    "contact": {
+        "details": [
+            {
+                "name": "email",
+                "value": "youremail@gmail.com"
+            },
+            {
+                "name": "phone number",
+                "value": "+ 48 600 000 000"
+            },
+            {
+                "name": "address",
+                "value": "Place This 1,<br> 00-844 North Macedonia"
+            }
+        ],
+        "copyright": "© Copyright 2018 YourProduct All rights reserved."
     }
 }
