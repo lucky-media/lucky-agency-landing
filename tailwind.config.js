@@ -33,6 +33,9 @@ module.exports = {
 
     },
     extend: {
+      margin: {
+        '-72': '-60rem',
+      },
       boxShadow: {
         input: 'inset 0px 0px 1px rgba(46, 32, 139, 0.23913)',
         heading: '0px -4px 64px rgba(214, 210, 220, 0.485536)'

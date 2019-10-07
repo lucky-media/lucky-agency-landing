@@ -94,6 +94,20 @@
                 "value": "Place This 1,<br> 00-844 North Macedonia"
             }
         ],
-        "copyright": "© Copyright 2018 YourProduct All rights reserved."
+        "copyright": "© Copyright 2018 YourProduct All rights reserved.",
+        "form": {
+            "heading": {
+                "subtitle": "Do you have any questions ?",
+                "title": "Get in touch",
+                "desc": "Want to join us? Send us a word and we’ll get back to you with a personalized offer!"
+            },
+            "details": {
+                "name": "Your first name",
+                "last": "Your last name",
+                "email": "Your e-mail address",
+                "message": "Enter your message",
+                "button": "Send message"
+            }
+        }
     }
 }

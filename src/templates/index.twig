@@ -9,7 +9,7 @@
 {% include "_sections/header.twig" %}
 
 {# Slides #}
-{% include "_sections/slides.twig" %}
+{# {% include "_sections/slides.twig" %} #}
 
 {# Features #}
 {% include "_sections/features.twig" %}
@@ -25,26 +25,99 @@
 
 <div class="container pt-20">
     <div class="row">
-        <div class="col-3 offset-3 z-50 pt-32">
-            <h3 class="font-bold text-3xl text-white mb-10">Contact Us</h3>
-            {% for row in contact.details %}
-            <div class="mb-8">
-                <p class="text-orange-500 text-xs font-bold uppercase tracking-wider mb-3">{{ row.name }}</p>
-                <p class="text-white font-light text-lg">{{ row.value }}</p>
-            </div>
-            {% endfor %}
+        <div class="col-4 relative">
+            <div class="relative pt-32 z-50">
+                <h3 class="font-bold text-3xl text-white mb-10">Contact Us</h3>
 
-            <div class="mt-16">
-                <p class="text-white font-light text-xs">{{ contact.copyright }}</p>
+                {% for row in contact.details %}
+                <div class="mb-8">
+                    <p class="text-orange-500 text-xs font-bold uppercase tracking-wider mb-3">{{ row.name }}</p>
+                    <p class="text-white font-light text-lg">{{ row.value }}</p>
+                </div>
+                {% endfor %}
+
+                <div class="mt-16">
+                    <p class="text-white font-light text-xs">{{ contact.copyright }}</p>
+                </div>
+            </div>
+            <div class="hidden xl:block absolute left-0 top-0 -ml-72 z-10">
+                <img class="w-full h-auto" src="assets/images/bg_round.png" alt="">
             </div>
         </div>
-        <div class="w-1/2">
-            <div class="absolute left-0 -ml-64 z-10">
-                <img class="w-full h-auto object-cover" src="assets/images/bg_round.png" alt="">
+        <div class="col-6 offset-2">
+            <div class="mb-10">
+                <p class="text-xs font-bold text-gray-700 uppercase mb-2">{{ contact.form.heading.subtitle }}</p>
+                <h1 class="text-3xl lg:text-5xl font-bold text-orange-500 mb-4">{{ contact.form.heading.title }}</h1>
+                <p class="text-sm md:text-lg text-gray-600 leading-loose font-light">{{ contact.form.heading.desc }}</p>
             </div>
-        </div>
-        <div class="col-6">
-            <h1>Hello</h1>
+            <form class="flex flex-col -mx-4" action="">
+                <div class="flex flex-row justify-between">
+                    <div class="w-1/2 px-4">
+                        <div class="relative">
+                            <input type="text"
+                                class="block w-full bg-gray-400 shadow-input rounded outline-none appearance-none px-5 py-4 text-sm font-light text-gray-800 placeholder-gray-800"
+                                placeholder="{{ contact.form.details.name }}">
+                            <div class="absolute right-0 inset-y-0 flex items-center mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block fill-current text-gray-800 w-6 h-6"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M13.207 6.38c0 1.866-1.297 3.379-2.897 3.379-1.6 0-2.896-1.513-2.896-3.38C7.414 4.513 7.84 3 10.31 3c2.471 0 2.897 1.513 2.897 3.38zM11.85 10.24c3.284.583 3.713 1.504 3.765 4.734.003.207.005.243.006.224v.251S14.838 17 10.31 17C5.781 17 5 15.45 5 15.45L5 15.111c0 .03.003.016.008-.24.06-3.146.515-4.053 3.763-4.63 0 0 .462.58 1.54.58 1.077 0 1.539-.58 1.539-.58z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-1/2 px-4">
+                        <div class="relative">
+                            <input type="text"
+                                class="block w-full bg-gray-400 shadow-input rounded outline-none appearance-none px-5 py-4 text-sm font-light text-gray-800 placeholder-gray-800"
+                                placeholder="{{ contact.form.details.last }}">
+                            <div class="absolute right-0 inset-y-0 flex items-center mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block fill-current text-gray-800 w-6 h-6"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M13.207 6.38c0 1.866-1.297 3.379-2.897 3.379-1.6 0-2.896-1.513-2.896-3.38C7.414 4.513 7.84 3 10.31 3c2.471 0 2.897 1.513 2.897 3.38zM11.85 10.24c3.284.583 3.713 1.504 3.765 4.734.003.207.005.243.006.224v.251S14.838 17 10.31 17C5.781 17 5 15.45 5 15.45L5 15.111c0 .03.003.016.008-.24.06-3.146.515-4.053 3.763-4.63 0 0 .462.58 1.54.58 1.077 0 1.539-.58 1.539-.58z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 mt-8">
+                    <div class="relative">
+                        <input type="text"
+                            class="block w-full bg-gray-400 shadow-input rounded outline-none appearance-none px-5 py-4 text-sm font-light text-gray-800 placeholder-gray-800"
+                            placeholder="{{ contact.form.details.email }}">
+                        <div class="absolute right-0 inset-y-0 flex items-center mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="block fill-current text-gray-800 w-6 h-6"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M6.525 8.967c-.764-.463-1.221-.74-1.373-.835a3.161 3.161 0 01-.784-.676C4.123 7.168 4 6.902 4 6.656c0-.305.093-.559.278-.762.185-.203.45-.305.793-.305h9.857c.29 0 .542.092.754.276a.847.847 0 01.318.662c0 .308-.11.603-.328.885a3.01 3.01 0 01-.817.72l-3.134 1.905c-.045.027-.14.086-.285.178a7.269 7.269 0 01-.71.413c-.135.07-.264.123-.384.158-.121.036-.233.053-.335.053h-.014c-.102 0-.214-.017-.335-.053a2.16 2.16 0 01-.385-.158 7.173 7.173 0 01-.71-.413l-.284-.178c-.406-.25-.991-.607-1.754-1.07zm5.47 1.814c.76-.48 1.871-1.155 3.335-2.022.255-.152.478-.322.67-.51v4.653a.85.85 0 01-.315.662 1.11 1.11 0 01-.756.275H5.07a1.11 1.11 0 01-.756-.275.85.85 0 01-.315-.662V8.249c.196.192.422.362.676.51 1.616.961 2.726 1.635 3.329 2.022.254.164.46.292.619.383.158.092.37.186.633.282.263.095.509.143.736.143h.014c.228 0 .473-.048.736-.143.264-.096.475-.19.633-.281.159-.092.365-.22.62-.384z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 mt-8">
+                    <div class="relative">
+                        <textarea
+                            class="block w-full bg-gray-400 shadow-input rounded outline-none appearance-none px-5 py-4 text-sm font-light text-gray-800 placeholder-gray-800"
+                            placeholder="{{ contact.form.details.message }}" id="" cols="30" rows="10"></textarea>
+                        <div class="absolute right-0 top-0 flex items-center mr-4 mt-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="block fill-current text-gray-800 w-6 h-6"
+                                viewBox="0 0 20 20">
+                                 <path d="M9.54 5C6.48 5 4 6.95 4 9.353c0 1.138.556 2.175 1.467 2.951-.035.756-.191 1.772-.745 2.296 1.058 0 2.141-.697 2.784-1.198.63.196 1.316.304 2.034.304 3.06 0 5.54-1.95 5.54-4.353C15.08 6.949 12.6 5 9.54 5z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-3/5 px-4 mt-8 self-end">
+                    <button
+                        class="bg-orange-300 hover:bg-orange-500 hover:text-white text-orange-400 font-medium py-4 rounded w-full">
+                        {{ contact.form.details.button }}
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
