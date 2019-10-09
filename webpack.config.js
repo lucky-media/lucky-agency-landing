@@ -5,7 +5,9 @@ const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TailwindCss = require('tailwindcss');
 const AutoPrefixer = require('autoprefixer');
 const path = require('path');
@@ -155,6 +157,10 @@ module.exports = {
         ],
     },
 
+    optimization: {
+        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+    },
+
     plugins: [
         new BrowserSyncPlugin({
             host: 'localhost',
@@ -182,7 +188,7 @@ module.exports = {
         new ImageminPlugin({
             disable: process.env.NODE_ENV !== 'production',
             pngquant: ({
-                quality: 30
+                quality: 70
             }),
             plugins: [imageminMozjpeg({
                 quality: 50

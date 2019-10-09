@@ -15,8 +15,10 @@
     "autoprefixer": "^9.6.1",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "path": "^0.12.7",
     "tailwindcss": "^1.1.2",
+    "terser-webpack-plugin": "^2.1.2",
     "tiny-slider": "^2.9.2"
   },
   "devDependencies": {
