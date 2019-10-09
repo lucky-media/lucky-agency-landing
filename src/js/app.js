@@ -21,6 +21,7 @@ const slider = tns({
   autoWidth: true,
   controls: false,
   loop: true,
+  lazyload: true,
   edgePadding: 0,
 })
 
