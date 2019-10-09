@@ -34,6 +34,7 @@ module.exports = {
     },
     extend: {
       margin: {
+        '-70': '-35rem',
         '-72': '-60rem',
       },
       boxShadow: {
