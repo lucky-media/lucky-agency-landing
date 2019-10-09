@@ -30,6 +30,18 @@
             },
             {
                 "image": "assets/images/camera.png"
+            },
+            {
+                "image": "assets/images/phone.png"
+            },
+            {
+                "image": "assets/images/office.png"
+            },
+            {
+                "image": "assets/images/laptop.png"
+            },
+            {
+                "image": "assets/images/camera.png"
             }
         ]
     },

@@ -1,10 +1,28 @@
 <div class="container">
     <div class="row justify-center text-center">
         {% include "../_components/heading.twig" with {params: features} %}
+        <div class="col-6 mt-16">
+            <div class="slidePrev cursor-pointer rounded-full bg-gray-300 inline-flex items-center justify-center"
+                style="width: 56px; height: 56px;">
+                <svg class="block w-5 h-4 fill-current text-gray-600">
+                    <path
+                        d="M20.9973 6.92501C20.9926 6.8998 20.9856 6.87459 20.9786 6.85168C20.9155 6.57899 20.6653 6.3865 20.3801 6.39338L2.28166 6.39338L7.78009 1.00376C7.89932 0.893768 7.96478 0.742529 7.96711 0.582124C7.96478 0.343807 7.8175 0.130697 7.59073 0.0413286C7.36631 -0.0457482 7.10681 0.00695591 6.9385 0.178819L0.411447 6.55837L-3.05106e-07 6.98L0.411447 7.40164L6.9385 13.7812C7.08344 13.9553 7.31488 14.0355 7.5393 13.9851C7.76139 13.9347 7.93672 13.7629 7.98815 13.5452C8.03958 13.3252 7.95776 13.0983 7.78009 12.9562L2.28166 7.56663L20.3801 7.56663C20.5531 7.5735 20.7191 7.50476 20.836 7.38331C20.9552 7.25957 21.0137 7.09229 20.9973 6.92501Z" />
+                </svg>
+            </div>
+            <div class="slideNext cursor-pointer rounded-full bg-gray-300 inline-flex items-center justify-center ml-4"
+                style="width: 56px; height: 56px;">
+                <svg class="block w-5 h-4 fill-current text-gray-600">
+                    <path
+                        d="M0.00270345 7.07499C0.00737929 7.1002 0.0143921 7.12541 0.0214056 7.14832C0.0845255 7.42101 0.334667 7.6135 0.619874 7.60662L18.7183 7.60662L13.2199 12.9962C13.1007 13.1062 13.0352 13.2575 13.0329 13.4179C13.0352 13.6562 13.1825 13.8693 13.4093 13.9587C13.6337 14.0457 13.8932 13.993 14.0615 13.8212L20.5886 7.44163L21 7.02L20.5886 6.59836L14.0615 0.218812C13.9166 0.0446577 13.6851 -0.0355456 13.4607 0.0148678C13.2386 0.0652806 13.0633 0.237144 13.0118 0.454837C12.9604 0.674821 13.0422 0.90168 13.2199 1.04375L18.7183 6.43337L0.619874 6.43337C0.44688 6.4265 0.280898 6.49524 0.164009 6.61669C0.0447836 6.74043 -0.0136611 6.90771 0.00270345 7.07499Z" />
+                </svg>
+            </div>
+        </div>
     </div>
 </div>
-<div class="w-full  mt-10 flex flex-row">
-    {% for item in features.slides %}
-    <img src="{{ item.image  }}" alt="">
-    {% endfor %}
+<div class="overflow-hidden">
+    <div class="w-full flex flex-row mt-10 slides">
+        {% for item in features.slides %}
+        <img class="max-w-md w-full h-auto" src="{{ item.image  }}" alt="">
+        {% endfor %}
+    </div>
 </div>

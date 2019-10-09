@@ -16,7 +16,8 @@
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "path": "^0.12.7",
-    "tailwindcss": "^1.1.2"
+    "tailwindcss": "^1.1.2",
+    "tiny-slider": "^2.9.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
