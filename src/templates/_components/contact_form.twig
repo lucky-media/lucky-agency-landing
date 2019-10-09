@@ -7,8 +7,7 @@
     <div class="flex flex-row justify-between">
         <div class="w-1/2 px-4">
             <div class="relative">
-                <label for="first_name" class="hidden">{{ contact.form.details.name }}</label>
-                <input type="text" id="first_name"
+                <input aria-label="{{ contact.form.details.name }}" type="text" id="first_name"
                     class="block w-full bg-gray-400 shadow-input rounded outline-none appearance-none px-5 py-4 text-sm font-light text-gray-800 placeholder-gray-800"
                     placeholder="{{ contact.form.details.name }}">
                 <div class="absolute right-0 inset-y-0 flex items-center mr-4">
@@ -23,8 +22,7 @@
         </div>
         <div class="w-1/2 px-4">
             <div class="relative">
-                <label for="last_name" class="hidden">{{ contact.form.details.last }}</label>
-                <input type="text" id="last_name"
+                <input aria-label="{{ contact.form.details.last }}" type="text" id="last_name"
                     class="block w-full bg-gray-400 shadow-input rounded outline-none appearance-none px-5 py-4 text-sm font-light text-gray-800 placeholder-gray-800"
                     placeholder="{{ contact.form.details.last }}">
                 <div class="absolute right-0 inset-y-0 flex items-center mr-4">
@@ -40,8 +38,7 @@
     </div>
     <div class="w-full px-4 mt-8">
         <div class="relative">
-            <label for="email" class="hidden">{{ contact.form.details.email }}</label>
-            <input type="text" id="email"
+            <input aria-label="{{ contact.form.details.email }}" type="text" id="email"
                 class="block w-full bg-gray-400 shadow-input rounded outline-none appearance-none px-5 py-4 text-sm font-light text-gray-800 placeholder-gray-800"
                 placeholder="{{ contact.form.details.email }}">
             <div class="absolute right-0 inset-y-0 flex items-center mr-4">
@@ -56,8 +53,7 @@
     </div>
     <div class="w-full px-4 mt-8">
         <div class="relative">
-            <label for="message" class="hidden">{{ contact.form.details.message }}</label>
-            <textarea id="message"
+            <textarea aria-label="{{ contact.form.details.message }}" id="message"
                 class="block w-full bg-gray-400 shadow-input rounded outline-none appearance-none px-5 py-4 text-sm font-light text-gray-800 placeholder-gray-800"
                 placeholder="{{ contact.form.details.message }}" id="" cols="30" rows="10"></textarea>
             <div class="absolute right-0 top-0 flex items-center mr-4 mt-4">
