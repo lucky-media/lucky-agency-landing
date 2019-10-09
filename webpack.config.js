@@ -182,7 +182,7 @@ module.exports = {
         new ImageminPlugin({
             disable: process.env.NODE_ENV !== 'production',
             pngquant: ({
-                quality: [0.5, 0.5]
+                quality: 30
             }),
             plugins: [imageminMozjpeg({
                 quality: 50
